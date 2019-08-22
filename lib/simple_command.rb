@@ -34,6 +34,7 @@ module SimpleCommand
 
   def errors
     Rails.logger.info ">>>> #{defined?(super)}"
+    ap defined?(super)
     return super if defined?(super)
 
     @errors ||= Errors.new
